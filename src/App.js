@@ -9,7 +9,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SideNav fullWidth={false} animate={true} openRight={false} overlay={true}/>
+        <SideNav
+          fullWidth={false}
+          animate={true}
+          openRight={false}
+          push={true}
+          overlay={true}
+        />
       </div>
     );
   }

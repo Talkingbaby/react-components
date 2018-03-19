@@ -39,8 +39,10 @@ export default class SideNav extends Component {
         }
 
         const bodyStyles = {
-            marginLeft: this.props.overlay && this.state.openClose ? '20rem' : 0,
-            transition: 'margin-left .5s',
+            height: '100vh',
+            marginLeft: this.props.push && this.state.openClose ? '20rem' : 0,
+            transition: 'all .5s',
+            backgroundColor: this.props.overlay && this.state.openClose ? 'rgba(0,0,0,.7)' : null
         }
 
         return (
